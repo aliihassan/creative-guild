@@ -1912,7 +1912,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    var data = {
+      photographer: {}
+    };
+    return data;
+  },
+  created: function created() {
+    this.load();
+  },
+  methods: {
+    load: function load() {
+      var self = this;
+      axios.get("/api/photographers/1").then(function (response) {
+        self.photographer = response.data.data;
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -37560,9 +37586,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("this is the photographer component")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "jumbotron jumbotron-fluid" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [_vm._v("col 1")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-6" }, [_vm._v("col 2")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [_vm._v("col")])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
