@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Resources\Album as AlbumResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class Photographer extends JsonResource
@@ -19,7 +20,8 @@ class Photographer extends JsonResource
             'phone' => $this->phone,
             'email'=> $this->email,
             'bio' => $this->bio,
-            'profile_picture' => $this->profile_picture
+            'profile_picture' => $this->profile_picture,
+            'album' => AlbumResource::collection($this->albums)
         ];
     }
 }
