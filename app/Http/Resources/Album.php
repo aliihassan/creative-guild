@@ -18,7 +18,7 @@ class Album extends JsonResource
             'id' => $this->id,
             'title' => $this->title,
             'description'=> $this->description,
-            'img' => $this->img,
+            'img' => 'img/'.$this->img,
             'date' => $this->date,
             'featured' => $this->featured
         ];

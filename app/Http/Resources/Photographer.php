@@ -20,7 +20,7 @@ class Photographer extends JsonResource
             'phone' => $this->phone,
             'email'=> $this->email,
             'bio' => $this->bio,
-            'profile_picture' => $this->profile_picture,
+            'profile_picture' => 'img/'.$this->profile_picture,
             'album' => AlbumResource::collection($this->albums)
         ];
     }
