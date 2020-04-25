@@ -1,0 +1,167 @@
+body {
+    background: linear-gradient(190deg, rgba(87,102,131,1) 0%, rgba(223,190,131,1) 100%) fixed;
+}
+
+#profile {
+    width: 1124px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#profile img {
+    margin-left: 30px;
+}
+
+#profile h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  height: 182px;
+  width: 182px;
+  background-size: cover;
+}
+
+#bio {
+    font-size: 0.8rem;
+}
+
+#bio small {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+#bio p {
+    color: gray;
+}
+
+#contact {
+    margin-top: 53px;
+    margin-left: -30px;
+}
+
+#contact #email {
+    margin-top: -16px;
+}
+
+#contact small {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+#contact p {
+    margin-top: -5px;
+    color: #f69ac7;
+    font-size: 0.8rem;
+}
+
+
+.cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 1.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  background: #fefff9;
+  color: #363636;
+  text-decoration: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    max-width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .card:nth-child(even) {
+    margin-right: 20px;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.card span {
+  display: block;
+}
+
+.card .card-summary {
+  padding: 5% 5% 3% 3%;
+  font-size: 0.8em; !important
+}
+
+.card .card-header {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: overlay;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+}
+
+.card .card-title {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card .card-title h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  margin-left: -10px;
+}
+
+.icon {
+    padding-left: 10px;
+}
+
+.date {
+    padding-right: 10px;
+    font-size: 0.7em;
+}
+
+img {
+  max-width: 100%;
+}
