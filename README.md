@@ -14,4 +14,4 @@ The API has been developed using the Laravel framework.
 
 To view the response returned from the API:
 
-    http://localhost:8000/photographers/1
+    http://localhost:8000/api/photographers/1
