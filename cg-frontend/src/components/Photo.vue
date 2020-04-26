@@ -24,28 +24,6 @@
           </div>
         </template>
       </div>
-
-      <!-- <div class="col-sm-4" :key="photo.id">
-          <div class="card">
-            <img
-              class="card-img-top"
-              :src="displayImage(photo.img)"
-              alt="Card image"
-              style="width:100%; height: 158px;"
-            />
-            <div class="card-body">
-              <p class="card-text">{{photo.description}}</p>
-              <div class="d-flex justify-content-between">
-                <div>
-                  <template v-if="photo.featured">
-                    <i class="fa fa-heart" style="font-size:20px;color:red;"></i>
-                  </template>
-                </div>
-                <div>{{ photo.date }}</div>
-              </div>
-            </div>
-          </div>
-      </div>-->
     </div>
   </div>
 </template>
